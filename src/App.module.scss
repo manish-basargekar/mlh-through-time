@@ -1,44 +1,42 @@
-.container{
+.container {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20rem;
+  padding: 10rem;
   background-color: rgb(0, 0, 0);
-  padding-top: 2rem;
-  padding-bottom: 15rem;
+  padding-top: 4rem;
+  // padding-bottom: 15rem;
   // padding-left: 25rem;
   position: relative;
   overflow: hidden;
 
+  background: linear-gradient(90deg, #000 16px, transparent 1%) 50%, linear-gradient(#000 16px, transparent 1%) 50%,
+    rgb(70, 69, 69);
+  // background-blend-mode: overlay, overlay, normal;
+  background-size: 17px 17px;
 
-   background: linear-gradient(90deg,#000 16px,transparent 1%) 50%,linear-gradient(#000 16px,transparent 1%) 50%,rgb(70, 69, 69) ;
-    // background-blend-mode: overlay, overlay, normal;
-    background-size: 17px 17px;
-
-  .view{
-    // background-color: aqua;
+  .view {
+    background-color: aqua;
     width: 100%;
     height: 100%;
     border: 2px solid black;
-    border-radius: 100px;
-    
-    iframe{
+    // border-radius: 100px;
+
+    iframe {
       width: 100%;
       height: 100%;
     }
     // flex: 1;
   }
 
-
-
-  .left-bar{
-    background-color: yellow;
-    height: max-content;
-    width: 20rem;
-    margin-top: 2rem;
+  .left-bar {
+    background-color: #ffffff;
+    height: 100%;
+    width: 10rem;
+    margin-top: 4rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -47,74 +45,218 @@
     justify-content: flex-start;
     align-items: center;
 
-
-
-    .time-profile{
-    min-height: max-content;
-    width: 15rem;
-    // background-color: gold;
-    // position: absolute;
-    // right: 0;
-    // top: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
-    padding: .5rem;
-    h2{
+    h4 {
       text-align: center;
       text-transform: uppercase;
     }
 
-    .profile{
-      padding: 1rem;
-      cursor: pointer;
+    .time-profile {
+      min-height: max-content;
+      width: 15rem;
+      // background-color: gold;
+      // position: absolute;
+      // right: 0;
+      // top: 4rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding: 0.5rem;
+      align-items: center;
+      justify-content: center;
+
+      .profile {
+        width: 48%;
+        padding: 1rem;
+        cursor: pointer;
+      }
     }
   }
-  }
 
-  .time{
+  .time {
     // position: absolute;
     // top: 0;
     // right: 0;
     font-size: 1.4rem;
-    width:14rem;
+    // width: 14rem;
     padding: 1rem;
     background-color: antiquewhite;
-    margin: .5rem;
-
-    
+    margin: 0.5rem;
   }
 
-  .sidebar{
+  .sidebar {
     background-color: rgb(255, 134, 134);
-    width: 20rem;
-    margin-top: 2rem;
-    min-height: 60vh;
+    width: 10rem;
+    margin-top: 4rem;
+    min-height: 100vh;
     position: absolute;
     padding: 2rem;
     left: 0;
     top: 0;
+    z-index: 8712387;
+    overflow: scroll;
   }
 
-  
-
-  .circle{
-    background-color: aqua;
+  .circle {
+    background-color: #6100ff;
     width: 28rem;
     height: 28rem;
     position: absolute;
     right: -4rem;
     bottom: -4rem;
     border-radius: 100%;
+    z-index: 9213987;
   }
-  .bigRedButton{
-    background-color: red;
-    width: 28rem;
-    height: 28rem;
+  .sm-circle {
+    background-color: rgb(24, 24, 24);
+    width: 6rem;
+    height: 6rem;
     position: absolute;
-    left: -4rem;
-    bottom: -4rem;
+    left: 11rem;
+    top: 0.5rem;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9213987;
+    .circle1 {
+      border: 2px solid rgb(187, 255, 0);
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circle2 {
+        background-color: rgb(255, 56, 56);
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100px;
+      }
+    }
+  }
+  // .bigRedButton {
+  //   background-color: red;
+  //   width: 30rem;
+  //   height: 30rem;
+  //   position: absolute;
+  //   left: -5rem;
+  //   bottom: -4rem;
+  //   border-radius: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   cursor: pointer;
+  // }
+
+  .bottom-bar {
+    height: 10rem;
+    background-color: #00ff55;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: calc(100% - 20rem);
+  }
+
+  .terminal {
+    font-family: monospace;
+    background-color: #000;
+    height: 100%;
+    width: 50%;
+    padding: 1rem;
+    p {
+      color: lime;
+      // font-family: "Courier";
+      font-size: 12px;
+      // margin: 10px 0 0 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 50em;
+      animation: type 4s steps(60, end) infinite;
+    }
+
+    p:nth-child(2) {
+      animation: type2 8s steps(60, end) infinite;
+    }
+
+    span {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes type {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes type2 {
+      0% {
+        width: 0;
+      }
+      50% {
+        width: 0;
+      }
+      100% {
+        width: 100;
+      }
+    }
+
+    @keyframes blink {
+      to {
+        opacity: 0;
+      }
+    }
+
+    ::selection {
+      background: black;
+    }
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    color: lime;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 1rem 0;
+    width: calc(100% - 20rem);
+    width: 100%;
+
+    .marquee {
+      height: 30px;
+      width:100%;
+
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee div {
+      display: block;
+      width: 200%;
+      height: 30px;
+
+      position: absolute;
+      overflow: hidden;
+
+      animation: marquee 14s linear infinite;
+    }
+
+    .marquee span {
+      float: left;
+      width: 50%;
+    }
+
+    @keyframes marquee {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: -100%;
+      }
+    }
   }
 }
-

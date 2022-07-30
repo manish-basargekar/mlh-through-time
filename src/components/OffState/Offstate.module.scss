@@ -1,0 +1,89 @@
+.off{
+    height: 100%;
+}
+
+.scene-1{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    //  background: linear-gradient(to top right, #831843, #ff0066, #ff237b, #ff74ab);
+    background-color: #000000;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+
+.wrap-container {
+    // position: fixed;
+    // overflow: hidden;
+    // min-height: 100vh;
+    // background-color: #831843;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+
+    //     background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+    // background-blend-mode: screen, color-dodge, overlay, difference, normal;
+//     background-color: #000;
+
+//    background: linear-gradient(90deg,#000 16px,transparent 1%) 50%,linear-gradient(#000 16px,transparent 1%) 50%,rgb(77, 76, 76) ;
+//     // background-blend-mode: overlay, overlay, normal;
+//     background-size: 17px 17px;
+}
+
+.wrap {
+    //   font-family: 'Outage', monospace;
+    font-family: "Space Grotesk", sans-serif;
+    /* position: fixed; */
+    -webkit-perspective: 100px;
+    perspective: 70px;
+    perspective-origin: 50% 130%;
+    /* text-transform: uppercase; */
+    //   border: 2px solid rgb(255, 255, 255);
+    //   height: 100px;
+    //   margin-top: 10rem;
+    /* margin: 200px; */
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000000;
+    font-size: 10vw;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #ff0000, 1px -1px 0 #6100ff, -1px 1px 0 #fff500, 1px 1px 0 #51d500;
+
+
+    
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    line-height: 0.4;
+
+    .sub {
+        font-size: 3.5rem;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    user-select: none;
+    text-transform: uppercase;
+}
+.text:first-child {
+    position: relative;
+}
+
+
+.explore{
+    padding: 1rem 2rem;
+    position: absolute;
+    bottom: 8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
