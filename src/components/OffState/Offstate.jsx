@@ -97,7 +97,8 @@ const Offstate = ({setMachine}) => {
 						</div>
 					</div>
 				</div>
-				<button className={Style.explore} onClick={() => setMachine("ON")}>Start machine</button>
+				<h1>SELECT A TIME PROFILE TO CONTINUE</h1>
+				{/* <button className={Style.explore} onClick={() => setMachine("ON")}>Start machine</button> */}
 			</div>
 		</div>
 	);

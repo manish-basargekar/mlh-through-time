@@ -11,7 +11,7 @@
     align-items: center;
     //  background: linear-gradient(to top right, #831843, #ff0066, #ff237b, #ff74ab);
     background-color: #000000;
-    border: 2px solid rgb(255, 255, 255);
+//    border: 2px solid rgb(96, 96, 96);
     position: relative;
 }
 
@@ -60,6 +60,7 @@
     font-size: 10vw;
     font-weight: bold;
     text-shadow: -1px -1px 0 #ff0000, 1px -1px 0 #6100ff, -1px 1px 0 #fff500, 1px 1px 0 #51d500;
+    text-shadow: -1px -1px 0 rgb(255, 0, 61), 1px -1px 0 rgb(0, 255, 133), -1px 1px 0 rgb(252, 255, 118), 1px 1px 0 rgb(255, 138, 0);
 
 
     
@@ -80,10 +81,11 @@
 }
 
 
-.explore{
+h1{
     padding: 1rem 2rem;
     position: absolute;
     bottom: 8rem;
-    cursor: pointer;
+    // cursor: pointer;
+    color: #fff;
     text-transform: uppercase;
 }
