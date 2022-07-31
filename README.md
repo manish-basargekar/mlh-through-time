@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# MLH through time
+Emulates a time machine which lets you explore history of mlh and its website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Live demo
+[Demo](https://mlh-through-time.vercel.app/)
 
-## Available Scripts
+# Screenshot
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![pretty_snap_2022_6_31_13_32](https://user-images.githubusercontent.com/64839201/182016452-19df51d3-79e6-42bd-9867-4c80e5f35526.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+![pretty_snap_2022_6_31_13_33](https://user-images.githubusercontent.com/64839201/182016528-c2b8bf5d-1714-4151-a97b-88240e193509.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![pretty_snap_2022_6_31_13_35](https://user-images.githubusercontent.com/64839201/182016535-475b9771-7221-45a5-81af-83e660f6ab27.png)
 
-### `npm run build`
+# Getting started
+For starting the app in your machine, open the terminal and follow these commands:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone the repo
+```
+git clone https://github.com/8mn/mlh-through-time.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd into working directory
+```
+cd mlh-through-time
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install dependencies
+```
+npm install
+```
 
-### `npm run eject`
+For starting react app:
+```
+npm run start
+```
+open http://localhost:3000 in browser to access the app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Approach:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Use web archive and `iframe` to render previous versions of mlh site
+- gsap for building the starting header animation
+- `useState hook` for maintaining different state of UI
+- Several SVGs, CSS animations, CSS gradients for building fake widgets
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Functionalities:
+- Visit any version of mlh site since its inception
+- Highlights brief moments happened in each year
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# What's next for Discover music
+- Unified color palette
+- Mobile responsiveness
+- Adding interactivity to widgets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions/suggestion, Contact me 
+- My Email: `hey@mnsh.me`
+- Twitter: [@oimanish](https://twitter.com/oimanish)
