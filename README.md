@@ -11,9 +11,6 @@ Emulates a time machine which lets you explore history of mlh and its website
 ![pretty_snap_2022_6_31_13_32](https://user-images.githubusercontent.com/64839201/182016452-19df51d3-79e6-42bd-9867-4c80e5f35526.png)
 
 
-![pretty_snap_2022_6_31_13_33](https://user-images.githubusercontent.com/64839201/182016528-c2b8bf5d-1714-4151-a97b-88240e193509.png)
-
-![pretty_snap_2022_6_31_13_35](https://user-images.githubusercontent.com/64839201/182016535-475b9771-7221-45a5-81af-83e660f6ab27.png)
 
 # Getting started
 For starting the app in your machine, open the terminal and follow these commands:
