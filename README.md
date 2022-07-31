@@ -1,5 +1,5 @@
 # MLH through time
-Emulates a time machine which lets you explore history of mlh and its website
+A time machine disguised as a web app to explore the history of MLH and its website
 
 # Live demo
 [Demo](https://mlh-through-time.vercel.app/)
