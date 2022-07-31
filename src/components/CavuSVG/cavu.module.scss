@@ -1,0 +1,14 @@
+.box {
+    width: 100%;
+    height: 100%;
+    // border: 2px solid rgb(96, 96, 96);
+    margin-top: 0.3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
