@@ -19,11 +19,11 @@
   // background-size: 17px 17px;
 
   .view {
-    background-color: aqua;
     width: 100%;
     height: 100%;
     // border: 2px solid black;
     // border-radius: 100px;
+    color: #fff;
 
     iframe {
       width: 100%;
@@ -72,13 +72,13 @@
 
       .profile {
         width: 100%;
-        padding:.9rem;
+        padding: 0.9rem;
         cursor: pointer;
         background-color: #000;
         color: #fff;
         border: 2px solid rgb(96, 96, 96);
         // font-size: 1.3rem;
-        font-family: 'Space Mono', monospace;
+        font-family: "Space Mono", monospace;
         &:hover {
           background-color: #fff;
           color: #000;
@@ -86,8 +86,6 @@
       }
     }
   }
-
-
 
   .sidebar {
     background-color: rgb(0, 0, 0);
@@ -120,7 +118,7 @@
   .bottom-bar {
     height: 9.5rem;
     background-color: rgb(0, 0, 0);
-    
+
     margin: 1rem;
     position: absolute;
     bottom: 0;
@@ -129,7 +127,7 @@
     color: lime;
 
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
     justify-content: space-between;
 
     a {
@@ -142,6 +140,81 @@
       background-size: 30px 30px;
       background-image: linear-gradient(90deg, rgba(0, 255, 0, 0.226) 2px, transparent 0),
         linear-gradient(180deg, rgba(0, 255, 0, 0.281) 2px, transparent 0);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      // flex-direction: column;
+      .circle {
+        background-color: rgb(0, 0, 0);
+        border: 2px solid lime;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 100%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        color: #000;
+        animation: rotate-circle 6s infinite linear;
+
+        .inner-circle{
+          background-color: rgb(4, 143, 4);
+          border-radius: 100%;
+          width: 6rem;
+          height: 6rem;
+          display: flex;
+          align-self: center;
+          justify-content: center;
+          color: #000;
+          animation: rotate-circle 6s infinite linear;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: lime;
+          top: 2px;
+          left: 48%;
+          height: 50%;
+          width: 4px;
+          border-radius: 5px;
+          -webkit-transform-origin: 50% 97%;
+          transform-origin: 50% 97%;
+          animation: rotate-circle 6s infinite linear;
+          
+        }
+      }
+
+      .circle:nth-child(1) {
+        // background-color: rgb(0, 255, 0);
+        animation: rotate-circle 3s infinite linear reverse;
+      }
+
+      .circle:nth-child(2) {
+        // background-color: rgb(0, 255, 0);
+        animation: rotate-circle 2s infinite linear reverse;
+      }
+
+      .circle:nth-child(3) {
+        background-color: rgb(0, 255, 0);
+        animation: rotate-circle 1s infinite linear reverse;
+
+        &::after {
+          background-color: rgb(0, 0, 0);
+        }
+      }
+
+      // write a animation for the circle to rotate
+
+      @keyframes rotate-circle {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
     }
 
     .time {
@@ -158,16 +231,16 @@
       background-size: 10px 10px;
       background-image: linear-gradient(90deg, rgb(37, 37, 37) 2px, transparent 0),
         linear-gradient(180deg, rgb(37, 37, 37) 2px, transparent 0);
-        border: 2px solid rgb(96, 96, 96);
-        height: 100%;
-        font-family: 'Space Mono', monospace;
-      }
-      
-      .content {
-        flex: 1;
-        padding: 0.5rem;
-        overflow: scroll;
-        border: 2px solid rgb(96, 96, 96);
+      border: 2px solid rgb(96, 96, 96);
+      height: 100%;
+      font-family: "Space Mono", monospace;
+    }
+
+    .content {
+      flex: 1;
+      padding: 0.5rem;
+      overflow: scroll;
+      border: 2px solid rgb(96, 96, 96);
 
       .Item {
         margin-top: 0.5rem;
@@ -199,7 +272,7 @@
     align-items: center;
     // margin-right: 1rem;
     color: rgb(255, 255, 255);
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
     font-size: 1.7rem;
   }
 
@@ -208,7 +281,7 @@
     top: 0;
     background-color: #000;
     color: rgb(0, 255, 133);
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 1;

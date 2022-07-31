@@ -3,10 +3,12 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
 
-const Offstate = ({setMachine}) => {
+const Offstate = () => {
 	const wrapContainerRef = useRef();
 	const wrapRef = useRef();
 	const q = gsap.utils.selector(wrapRef);
+
+	// .Offstate_text__0-Ijx
 
 	useEffect(() => {
 		q(".Offstate_text__0-Ijx").forEach((el, i) => {

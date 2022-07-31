@@ -44,10 +44,28 @@ function App() {
 				"Over the 2016, more than 20,000 hackers had registered for more than 25 MLH Member Events using MyMLH including MHacks, HackTX, HackRU, HackNotts, BrickHack, RevolutionUC and many more. It has been fantastic watching hackers sign up in seconds for events and watching organizers focus their time on making the event experience better for hackers rather than worrying about recreating registration systems.",
 		},
 		{
+			date: "2018",
+			title: "",
+			description:
+				"",
+		},
+		{
 			date: "2019",
 			title: "MLH x APAC",
 			description:
 				"  In order to assure that as many hackers around the word have the oppertunity compete in these competitions, MLA had officially launched in the Asia-Pacific for hackers in India, australia, Singapore, etc.",
+		},
+		{
+			date: "2020",
+			title: "",
+			description:
+				" ",
+		},
+		{
+			date: "2021",
+			title: "",
+			description:
+				"  ",
 		},
 		{
 			date: "2022",
@@ -72,11 +90,13 @@ function App() {
 
 	const [time, setTime] = useState();
 
-	const [loading, setLoading] = useState(false);
+	// const [loading, setLoading] = useState(false);
 
 	const [urlId, setUrlId] = useState("20130908152346");
 
 	const [machine, setMachine] = useState("OFF");
+
+	const [iframeLoading, setIframeLoading] = useState(true);
 
 	const handleTime = (time) => {
 		setMachine("ON");
@@ -104,20 +124,21 @@ function App() {
 			case "2018":
 				setUrlId("20180730062419");
 				setTime("2018");
+        break;
 			case "2019":
-				setUrlId("20190616115005");
+				setUrlId("20190726131820");
 				setTime("2019");
 				break;
 			case "2020":
-				setUrlId("20200108180900");
+				setUrlId("20200806195231");
 				setTime("2020");
 				break;
 			case "2021":
-				setUrlId("20200108180900");
+				setUrlId("20210730145113");
 				setTime("2021");
 				break;
 			case "2022":
-				setUrlId("20200108180900");
+				setUrlId("20220729162256");
 				setTime("2022");
 				break;
 			default:
@@ -125,13 +146,28 @@ function App() {
 		}
 	};
 
+	// useEffect(() => {
+	// 	if (machine === "ON") {
+	// 		setTimeout(() => {
+	// 			setLoading(true);
+	// 		}, 5000);
+	// 	}
+	// }, [loading, machine]);
+
 	useEffect(() => {
-		if (machine === "ON") {
-			setTimeout(() => {
-				setLoading(true);
-			}, 5000);
-		}
-	}, [loading, machine]);
+		if (iframeLoading === true) {
+      return
+    } else{
+
+				setIframeLoading(false);
+
+    
+    }
+	}, [iframeLoading]);
+
+	const hideSpinner = () => {
+		setIframeLoading(false);
+	};
 
 	return (
 		<div className={Style.App}>
@@ -142,20 +178,13 @@ function App() {
 						<Offstate setMachine={setMachine} />
 					) : (
 						<>
-							{!loading ? (
-								<Loading />
-							) : (
-								// <div>
-								//   An iframe
-								// </div>
-								<>
-									<iframe
-										src={`https://web.archive.org/web/${urlId}/http://mlh.io/`}
-										frameBorder="0"
-                    title={`MLH websiste for ${time}`}
-									></iframe>
-								</>
-							)}
+							<>{iframeLoading ? <Loading /> : null}</>
+							<iframe
+								src={`https://web.archive.org/web/${urlId}/http://mlh.io/`}
+								frameBorder="0"
+								title={`MLH websiste for ${time}`}
+								onLoad={() => hideSpinner()}
+							></iframe>
 						</>
 					)}
 				</div>
@@ -186,7 +215,14 @@ function App() {
 					<CavuSVG />
 				</div>
 				<div className={Style["bottom-bar"]}>
-					<div className={Style.pattern}></div>
+					<div className={Style.pattern}>
+            <div className={Style.circle}>
+              <div className={Style["inner-circle"]}></div>
+            </div>
+            <div className={Style.circle}></div>
+            <div className={Style.circle}></div>
+            <div className={Style.circle}></div>
+          </div>
 					<div className={Style.time}>{time ? time : "TIME"}</div>
 					<div className={Style.content}>
 						{!time && (
@@ -230,10 +266,10 @@ function App() {
 				<div className={Style.header}>
 					<div className={Style.marquee}>
 						<div>
-							<span>Fasten your seat belts {"  "} Fasten your seat belts</span>
+							<span>please Fasten your seat belts </span>
 
-							<span>{"    "}Fasten your seat belts</span>
-							<span>{"    "}Fasten your seat belts</span>
+							<span>{"    "}please Fasten your seat belts</span>
+							<span>{"    "}please Fasten your seat belts</span>
 						</div>
 					</div>
 				</div>
