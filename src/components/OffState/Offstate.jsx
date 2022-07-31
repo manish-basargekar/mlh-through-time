@@ -9,24 +9,23 @@ const Offstate = ({setMachine}) => {
 	const q = gsap.utils.selector(wrapRef);
 
 	useEffect(() => {
-		q(".Offstate_text__LqpRx").forEach((el, i) => {
+		q(".Offstate_text__0-Ijx").forEach((el, i) => {
 			gsap.to(el, {
 				duration: 1,
 				z: 1 * (i + 10),
-                
 			});
 		});
 
 
 
 
-	}, []);
+	}, [q]);
 
 	return (
 		<div className={Style.off}>
 			<div className={Style["scene-1"]}>
 				<div className={Style["wrap-container"]} ref={wrapContainerRef}>
-					<div className={Style.wrap} ref={wrapRef}>
+					<div className={Style.wrap} ref={wrapRef} id="wrap">
 						<div className={Style.text}>
 							MLH <br />
 							<span className={Style.sub}> through time </span>
