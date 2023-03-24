@@ -4,6 +4,9 @@ A time machine disguised as a web app to explore the history of MLH and its webs
 # Live demo
 [Demo](https://mlh-through-time.vercel.app/)
 
+# Hackathon Submission
+[Devpost](https://devpost.com/software/mlh-through-time)
+
 # Screenshot
 
 
