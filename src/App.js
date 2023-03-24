@@ -89,7 +89,7 @@ function App() {
 	];
 
 	const [time, setTime] = useState();
-
+  
 	// const [loading, setLoading] = useState(false);
 
 	const [urlId, setUrlId] = useState("20130908152346");
@@ -171,6 +171,7 @@ function App() {
 
 	return (
 		<div className={Style.App}>
+			<div className={Style.mobileView}>Sorry, the demo is only available on devices with width larger than mobile 😅</div>
 			<div className={Style.container}>
 				<div className={Style.view}>
 					{/* <Lights /> */}
@@ -262,7 +263,7 @@ function App() {
 							})}
 					</div>
 				</div>
-				<div className={Style.logo}>MLH THROUGH TIME</div>
+				<div className={Style.logo} id="logo">MLH THROUGH TIME</div>
 				<div className={Style.header}>
 					<div className={Style.marquee}>
 						<div>

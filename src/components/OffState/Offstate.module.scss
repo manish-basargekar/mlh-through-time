@@ -48,7 +48,7 @@
     /* text-transform: uppercase; */
     //   border: 2px solid rgb(255, 255, 255);
     //   height: 100px;
-    //   margin-top: 10rem;
+      margin-top: 8rem;
     /* margin: 200px; */
 }
 
@@ -62,14 +62,19 @@
     text-shadow: -1px -1px 0 #ff0000, 1px -1px 0 #6100ff, -1px 1px 0 #fff500, 1px 1px 0 #51d500;
     text-shadow: -1px -1px 0 rgb(255, 0, 61), 1px -1px 0 rgb(0, 255, 133), -1px 1px 0 rgb(252, 255, 118), 1px 1px 0 rgb(255, 138, 0);
 
-
+    // @media screen and (max-width: 768px) {
+    //     font-size: 8vw;
+    
+        
+    // }
     
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     line-height: 0.4;
 
     .sub {
-        font-size: 3.5rem;
+        font-size: 3vw;
+        margin-top: 5rem;
         font-family: "Space Grotesk", sans-serif;
     }
 
