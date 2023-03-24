@@ -170,7 +170,10 @@ const Offstate = () => {
             </div> */}
           </div>
         </div>
-        <h1>SELECT A TIME PROFILE TO CONTINUE</h1>
+		<div className={Style.instruction}>
+
+        <h1 >SELECT A TIME PROFILE TO CONTINUE</h1>
+		</div>
         {/* <button className={Style.explore} onClick={() => setMachine("ON")}>Start machine</button> */}
       </div>
     </div>
